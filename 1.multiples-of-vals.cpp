@@ -18,7 +18,7 @@ int main(void)
 
     // Loop 'upper_bound' times
     for (int i = 0; i < upper_bound; i++)
-        // if x or y divided by i has no remainder 
+        // if i divided by x or y has no remainder 
         if (i % x == 0 || i % y == 0)
             accumulator += i; // Increment accumulator by i
 
