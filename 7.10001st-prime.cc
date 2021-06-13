@@ -27,13 +27,16 @@ bool is_prime(int x)
 int main()
 {
     // i -> Counter for how many prime numbers considered so far
-    // j -> Prime numbers
+    // j -> Current Prime number
     int i = 2, j = 3;
+
+    // While prime number count is not equal to 10001
     while (i != 10001) {
-        j += 2;
+        j += 2; // move to next value
+        // if current value "j" is a prime value
         if (is_prime(j)) {
-            i++;
-            continue;
+            i++;      // increment prime count
+            continue; // jump to next loop
         }
     }
     std::cout << j << std::endl;
